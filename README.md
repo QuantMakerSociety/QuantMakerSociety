@@ -1,8 +1,7 @@
-# QuantMaker Society
-API for QuantMaker Society
+# qms
+API for Quant Maker Society client.
 
 ## Directories
-
 
 | Directory | Description                              |
 |-----------|------------------------------------------|
@@ -11,5 +10,3 @@ API for QuantMaker Society
 | lib       | Project libraries are build here.        |
 | plugins   | Plugins are build here.                  |
 | src       | Source code for plugins.                 |
-
-
