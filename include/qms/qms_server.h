@@ -3,6 +3,11 @@
  * @file
  */
 #include "qms_item.h"
+#include "qms_currency.h"
+#include "qms_symbol.h"
+#include "qms_bankInfo.h"
+#include "qms_exposure.h"
+#include "qms_marketDepth.h"
 
 #pragma region QMSServer
 struct QMSServer;
@@ -17,7 +22,7 @@ struct qms_barData;
  * @return Depends on message.
  */
 typedef int(
-    __stdcall* qms_listener)(QMSServer& svr, const qms_msg& msg, void* ptr);
+	__stdcall* qms_listener)(QMSServer& svr, const qms_msg& msg, void* ptr);
 
 /**
  * Called when the bar data changed.
@@ -26,9 +31,9 @@ typedef int(
  * @param bd Bar data.
  */
 typedef void(__stdcall* qms_onBarDataChanged)(
-    QMSServer&         svr,
-    int                msg,
-    const qms_barData& bd);
+	QMSServer&         svr,
+	int                msg,
+	const qms_barData& bd);
 
 /**
  * Retrieve icon. (Optional)
@@ -66,13 +71,13 @@ struct QMSServer
 	 * @return 0 on success. -1 on failure.
 	 */
 	virtual int PlaceMarketOrder(
-	    qms_listener who,
-	    int          idAccount,
-	    int          idSymbol,
-	    uint64_t     stratId,
-	    double       volume,
-	    double       price,
-	    const char*  desc) = 0;
+		qms_listener who,
+		int          idAccount,
+		int          idSymbol,
+		uint64_t     stratId,
+		double       volume,
+		double       price,
+		const char*  desc) = 0;
 
 	/**
 	 * Places a limit order.
@@ -89,16 +94,16 @@ struct QMSServer
 	 * @return 0 on success, -1 on failure.
 	 */
 	virtual int PlaceLimit(
-	    qms_listener who,
-	    int          idAccount,
-	    int          idSymbol,
-	    uint64_t     stratId,
-	    char         mode,
-	    char         tif,
-	    double       volume,
-	    double       price,
-	    double       stopPrice,
-	    const char*  desc) = 0;
+		qms_listener who,
+		int          idAccount,
+		int          idSymbol,
+		uint64_t     stratId,
+		char         mode,
+		char         tif,
+		double       volume,
+		double       price,
+		double       stopPrice,
+		const char*  desc) = 0;
 
 	virtual int CancelLimit(uint32_t id) = 0;
 
@@ -204,10 +209,10 @@ struct QMSServer
 	 * @return < 0 on error. >= 0 on success.
 	 */
 	virtual int RegisterBarDataListener(
-	    qms_listener         ltn,
-	    qms_onBarDataChanged fun,
-	    const qms_itemArray& baseCfg,
-	    void*                ptr) = 0;
+		qms_listener         ltn,
+		qms_onBarDataChanged fun,
+		const qms_itemArray& baseCfg,
+		void*                ptr) = 0;
 
 	/**
 	* Add quant.

@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DLL", "DLL", "{4869F67E-B4D3-AAF5-FD11-5C9B69BB884A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "qms_ta64", "src\qms_ta64\qms_ta64.vcxproj", "{74B7879E-6084-E2A9-899D-D05175C91738}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LIB", "LIB", "{E38AF67E-4FF5-AAF5-9833-5C9B04DD884A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "qms", "src\qms\qms.vcxproj", "{16A2880B-82AB-887C-0B27-9F7C772F947C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{74B7879E-6084-E2A9-899D-D05175C91738}.Debug|x64.ActiveCfg = Debug|x64
+		{74B7879E-6084-E2A9-899D-D05175C91738}.Debug|x64.Build.0 = Debug|x64
+		{74B7879E-6084-E2A9-899D-D05175C91738}.Release|x64.ActiveCfg = Release|x64
+		{74B7879E-6084-E2A9-899D-D05175C91738}.Release|x64.Build.0 = Release|x64
+		{16A2880B-82AB-887C-0B27-9F7C772F947C}.Debug|x64.ActiveCfg = Debug|x64
+		{16A2880B-82AB-887C-0B27-9F7C772F947C}.Debug|x64.Build.0 = Debug|x64
+		{16A2880B-82AB-887C-0B27-9F7C772F947C}.Release|x64.ActiveCfg = Release|x64
+		{16A2880B-82AB-887C-0B27-9F7C772F947C}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{74B7879E-6084-E2A9-899D-D05175C91738} = {4869F67E-B4D3-AAF5-FD11-5C9B69BB884A}
+		{16A2880B-82AB-887C-0B27-9F7C772F947C} = {E38AF67E-4FF5-AAF5-9833-5C9B04DD884A}
+	EndGlobalSection
+EndGlobal

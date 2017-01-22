@@ -4,6 +4,7 @@
  */
 #include "qms_cs.h"
 #include "qms_string.h"
+#include "qms_tarray.h"
 
 /**
  * Configuration Item.

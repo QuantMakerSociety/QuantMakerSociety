@@ -2,6 +2,8 @@
 /**
  * @file
  */
+#include "qms_priceVol.h"
+
 /**
 * Market depth.
 * A Symbol can receive a price from more than one source.

@@ -2,6 +2,15 @@
 /**
  * @file
  */
+#include "qms_marketDepth.h"
+#include "qms_group.h"
+#include "qms_account.h"
+#include "qms_deal.h"
+#include "qms_order.h"
+#include "qms_limit.h"
+#include "qms_deposit.h"
+#include "qms_pluginInfo.h"
+
 /**
 * @defgroup msg Messages
 * @{
@@ -13,113 +22,113 @@
 enum eQMSMsg
 {
 	/**
-    * Unknown message.
-    */
+	* Unknown message.
+	*/
 	gbxam_unknown,
 
 	/**
-    * Listener added.
-    */
+	* Listener added.
+	*/
 	gbxam_listenerAdded,
 
 	/**
-    * Listener removed.
-    */
+	* Listener removed.
+	*/
 	gbxam_listenerRemoved,
 
 	/**
-    * Information message.
-    */
+	* Information message.
+	*/
 	gbxam_info,
 
 	/**
-    * Client connected to server.
-    */
+	* Client connected to server.
+	*/
 	gbxam_connected,
 
 	/**
-    * Client disconected from server.
-    */
+	* Client disconected from server.
+	*/
 	gbxam_disconnected,
 
 	/**
-    * Quote.
-    */
+	* Quote.
+	*/
 	gbxam_quote,
 
 	/**
-    * Group changed.
-    */
+	* Group changed.
+	*/
 	gbxam_groupChanged,
 
 	/**
-    * Account information changed.
-    */
+	* Account information changed.
+	*/
 	gbxam_accountChanged,
 
 	/**
-    * Order was filled.
-    */
+	* Order was filled.
+	*/
 	gbxam_dealFilled,
 
 	/**
-    * Order was placed.
-    */
+	* Order was placed.
+	*/
 	gbxam_orderPlaced,
 
 	/**
-    * Limit was placed.
-    */
+	* Limit was placed.
+	*/
 	gbxam_limitPlaced,
 
 	/**
-    * Limit was changed.
-    */
+	* Limit was changed.
+	*/
 	gbxam_limitChanged,
 
 	/**
-    * Limit was canceled.
-    */
+	* Limit was canceled.
+	*/
 	gbxam_limitCancelled,
 
 	/**
-    * Order failed.
-    */
+	* Order failed.
+	*/
 	gbxam_orderFailed,
 
 	/**
-    * Limit failed.
-    */
+	* Limit failed.
+	*/
 	gbxam_limitFailed,
 
 	/**
-    * Deposit or retirement.
-    */
+	* Deposit or retirement.
+	*/
 	gbxam_deposit,
 
 	/**
-    * Request plugin information.
-    */
+	* Request plugin information.
+	*/
 	gbxam_getPluginInfo,
 
 	/**
-    * Configuration was changed.
-    */
+	* Configuration was changed.
+	*/
 	gbxam_configChanged,
 
 	/**
-     * Command.
-     */
+	 * Command.
+	 */
 	gbxam_command,
 
 	/**
-     * Configuration per account changed.
-     */
+	 * Configuration per account changed.
+	 */
 	gbxam_acctCfgChanged,
 
 	/**
-     * An item changed.
-     */
+	 * An item changed.
+	 */
 	gbxam_itemChanged,
 
 };
@@ -182,7 +191,7 @@ struct qms_msgInfo : public qms_msg
 	* @return Pointer to message on success. 0 on failure.
 	*/
 	static qms_msgInfo*
-	    Create(void* buff, size_t buffLen, uint8_t mode, const char* txt);
+		Create(void* buff, size_t buffLen, uint8_t mode, const char* txt);
 }; // 4 + 1 + strlen(message)
 
 /**
@@ -619,8 +628,8 @@ struct qms_getPluginInfo : public qms_msg
 	enum
 	{
 		/**
-	    * Id of message.
-	    */
+		* Id of message.
+		*/
 		ID = gbxam_getPluginInfo
 	};
 
@@ -656,8 +665,8 @@ struct qms_configChanged : public qms_msg
 	enum
 	{
 		/**
-	    * Id of message.
-	    */
+		* Id of message.
+		*/
 		ID = gbxam_configChanged,
 	};
 
@@ -693,8 +702,8 @@ struct qms_command : public qms_msg
 	enum
 	{
 		/**
-	     * Id of message.
-	     */
+		 * Id of message.
+		 */
 		ID = gbxam_command,
 	};
 
@@ -724,8 +733,8 @@ struct qms_acctCfgChanged : public qms_msg
 	enum
 	{
 		/**
-	     * Id of message.
-	     */
+		 * Id of message.
+		 */
 		ID = gbxam_acctCfgChanged,
 	};
 
@@ -745,8 +754,8 @@ struct qms_itemChanged : public qms_msg
 	enum
 	{
 		/**
-	     * Id of message.
-	     */
+		 * Id of message.
+		 */
 		ID = gbxam_itemChanged,
 	};
 
