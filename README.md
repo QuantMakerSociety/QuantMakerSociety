@@ -3,6 +3,7 @@ API for QuantMaker Society
 
 ## Directories
 
+
 | Directory | Description                              |
 |-----------|------------------------------------------|
 | docs      | Holds project website and documentation. |
