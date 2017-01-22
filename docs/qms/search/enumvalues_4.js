@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['gbxam_5faccountchanged',['gbxam_accountChanged',['../group__msg.html#ggab69d08e5c7f6243ddff7ae38ed5aa38aa155df7888637dacf745f0ea37265494f',1,'qms_msg.h']]],
+  ['gbxam_5facctcfgchanged',['gbxam_acctCfgChanged',['../group__msg.html#ggab69d08e5c7f6243ddff7ae38ed5aa38aa5f69794291c4844ae3c351c4a344e56a',1,'qms_msg.h']]],
+  ['gbxam_5fcommand',['gbxam_command',['../group__msg.html#ggab69d08e5c7f6243ddff7ae38ed5aa38aadbe24548fb2ec151d6fa56a2b7644fd6',1,'qms_msg.h']]],
+  ['gbxam_5fconfigchanged',['gbxam_configChanged',['../group__msg.html#ggab69d08e5c7f6243ddff7ae38ed5aa38aa52af3c0e0f3255b5df05288135e74efd',1,'qms_msg.h']]],
+  ['gbxam_5fconnected',['gbxam_connected',['../group__msg.html#ggab69d08e5c7f6243ddff7ae38ed5aa38aa1b5b1178aa3f43223682f5685b81c60a',1,'qms_msg.h']]],
+  ['gbxam_5fdealfilled',['gbxam_dealFilled',['../group__msg.html#ggab69d08e5c7f6243ddff7ae38ed5aa38aa311dae645ed36a0d898172f486ee58a6',1,'qms_msg.h']]],
+  ['gbxam_5fdeposit',['gbxam_deposit',['../group__msg.html#ggab69d08e5c7f6243ddff7ae38ed5aa38aa62e2614f82f76c623040ece462895be9',1,'qms_msg.h']]],
+  ['gbxam_5fdisconnected',['gbxam_disconnected',['../group__msg.html#ggab69d08e5c7f6243ddff7ae38ed5aa38aa1ece4a552d3a01aacce56378cb34b367',1,'qms_msg.h']]],
+  ['gbxam_5fgetplugininfo',['gbxam_getPluginInfo',['../group__msg.html#ggab69d08e5c7f6243ddff7ae38ed5aa38aad6260e8efaf00bda45b0e9d996437de6',1,'qms_msg.h']]],
+  ['gbxam_5fgroupchanged',['gbxam_groupChanged',['../group__msg.html#ggab69d08e5c7f6243ddff7ae38ed5aa38aaeacd501bdf1b3488771c1e25bfe8296c',1,'qms_msg.h']]],
+  ['gbxam_5finfo',['gbxam_info',['../group__msg.html#ggab69d08e5c7f6243ddff7ae38ed5aa38aaf8815addfc16703682ff842f8f33f98f',1,'qms_msg.h']]],
+  ['gbxam_5fitemchanged',['gbxam_itemChanged',['../group__msg.html#ggab69d08e5c7f6243ddff7ae38ed5aa38aaa9b6c449e8a27484ad803da13b23b463',1,'qms_msg.h']]],
+  ['gbxam_5flimitcancelled',['gbxam_limitCancelled',['../group__msg.html#ggab69d08e5c7f6243ddff7ae38ed5aa38aaf13b8e27a04dcc8b12c94680f374b0c2',1,'qms_msg.h']]],
+  ['gbxam_5flimitchanged',['gbxam_limitChanged',['../group__msg.html#ggab69d08e5c7f6243ddff7ae38ed5aa38aa5e30b2464eadaf507efb1d0ab15ab940',1,'qms_msg.h']]],
+  ['gbxam_5flimitfailed',['gbxam_limitFailed',['../group__msg.html#ggab69d08e5c7f6243ddff7ae38ed5aa38aa8d2c228aebe500b9345db7b32ca4dc97',1,'qms_msg.h']]],
+  ['gbxam_5flimitplaced',['gbxam_limitPlaced',['../group__msg.html#ggab69d08e5c7f6243ddff7ae38ed5aa38aaaee6409a70a52bbaf6e751b80ef2a5b8',1,'qms_msg.h']]],
+  ['gbxam_5flisteneradded',['gbxam_listenerAdded',['../group__msg.html#ggab69d08e5c7f6243ddff7ae38ed5aa38aa3281e94ce8dee7e2fa1e2875dbf0cf54',1,'qms_msg.h']]],
+  ['gbxam_5flistenerremoved',['gbxam_listenerRemoved',['../group__msg.html#ggab69d08e5c7f6243ddff7ae38ed5aa38aaba3b92b4e03a0580b216519e4d15e1ad',1,'qms_msg.h']]],
+  ['gbxam_5forderfailed',['gbxam_orderFailed',['../group__msg.html#ggab69d08e5c7f6243ddff7ae38ed5aa38aad394d30533b3c8e9456acbda265c9690',1,'qms_msg.h']]],
+  ['gbxam_5forderplaced',['gbxam_orderPlaced',['../group__msg.html#ggab69d08e5c7f6243ddff7ae38ed5aa38aad4eaf186187c948be1eb26dcfc33222a',1,'qms_msg.h']]],
+  ['gbxam_5fquote',['gbxam_quote',['../group__msg.html#ggab69d08e5c7f6243ddff7ae38ed5aa38aa220922f318c4954fbdc07b00bd4c3b3d',1,'qms_msg.h']]],
+  ['gbxam_5funknown',['gbxam_unknown',['../group__msg.html#ggab69d08e5c7f6243ddff7ae38ed5aa38aa45c8a866dd66d559d4b9228a91bbe88a',1,'qms_msg.h']]],
+  ['gtc',['GTC',['../structqms__limit.html#ac8fde3bc4dcccc31a9d331986ab9cab5af72b88e925859446dfb22497540acc97',1,'qms_limit']]]
+];

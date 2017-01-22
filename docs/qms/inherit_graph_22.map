@@ -1,0 +1,24 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$structqms__msg.html" title="qms_msg" alt="" coords="5,512,84,539"/>
+<area shape="rect" id="node2" href="$structqms__acct_cfg_changed.html" title="qms_acctCfgChanged" alt="" coords="147,5,296,32"/>
+<area shape="rect" id="node3" href="$structqms__command.html" title="qms_command" alt="" coords="166,56,277,83"/>
+<area shape="rect" id="node4" href="$structqms__config_changed.html" title="qms_configChanged" alt="" coords="152,107,291,133"/>
+<area shape="rect" id="node5" href="$structqms__get_plugin_info.html" title="qms_getPluginInfo" alt="" coords="157,157,285,184"/>
+<area shape="rect" id="node6" href="$structqms__item_changed.html" title="qms_itemChanged" alt="" coords="156,208,287,235"/>
+<area shape="rect" id="node7" href="$structqms__msg_account_changed.html" title="qms_msgAccountChanged" alt="" coords="132,259,311,285"/>
+<area shape="rect" id="node8" href="$structqms__msg_added.html" title="qms_msgAdded" alt="" coords="163,309,279,336"/>
+<area shape="rect" id="node9" href="$structqms__msg_connected.html" title="qms_msgConnected" alt="" coords="151,360,292,387"/>
+<area shape="rect" id="node10" href="$structqms__msg_deal_filled.html" title="qms_msgDealFilled" alt="" coords="153,411,289,437"/>
+<area shape="rect" id="node11" href="$structqms__msg_deposit.html" title="qms_msgDeposit" alt="" coords="160,461,283,488"/>
+<area shape="rect" id="node12" href="$structqms__msg_disconnected.html" title="qms_msgDisconnected" alt="" coords="142,512,301,539"/>
+<area shape="rect" id="node13" href="$structqms__msg_group_changed.html" title="qms_msgGroupChanged" alt="" coords="139,563,304,589"/>
+<area shape="rect" id="node14" href="$structqms__msg_info.html" title="qms_msgInfo" alt="" coords="172,613,271,640"/>
+<area shape="rect" id="node15" href="$structqms__msg_limit_cancelled.html" title="qms_msgLimitCancelled" alt="" coords="139,664,303,691"/>
+<area shape="rect" id="node16" href="$structqms__msg_limit_changed.html" title="qms_msgLimitChanged" alt="" coords="142,715,301,741"/>
+<area shape="rect" id="node17" href="$structqms__msg_limit_failed.html" title="qms_msgLimitFailed" alt="" coords="150,765,293,792"/>
+<area shape="rect" id="node18" href="$structqms__msg_limit_placed.html" title="qms_msgLimitPlaced" alt="" coords="148,816,295,843"/>
+<area shape="rect" id="node19" href="$structqms__msg_order_failed.html" title="qms_msgOrderFailed" alt="" coords="148,867,295,893"/>
+<area shape="rect" id="node20" href="$structqms__msg_order_placed.html" title="qms_msgOrderPlaced" alt="" coords="146,917,297,944"/>
+<area shape="rect" id="node21" href="$structqms__msg_quote.html" title="qms_msgQuote" alt="" coords="164,968,279,995"/>
+<area shape="rect" id="node22" href="$structqms__msg_removed.html" title="qms_msgRemoved" alt="" coords="155,1019,287,1045"/>
+</map>

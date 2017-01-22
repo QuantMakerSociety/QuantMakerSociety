@@ -1,0 +1,5 @@
+<map id="qms_msgQuote" name="qms_msgQuote">
+<area shape="rect" id="node2" href="$structqms__msg.html" title="qms_msg" alt="" coords="5,109,84,136"/>
+<area shape="rect" id="node3" href="$structqms__market_depth.html" title="qms_marketDepth" alt="" coords="109,109,237,136"/>
+<area shape="rect" id="node4" href="$structqms__price_vol.html" title="qms_priceVol" alt="" coords="122,5,223,32"/>
+</map>

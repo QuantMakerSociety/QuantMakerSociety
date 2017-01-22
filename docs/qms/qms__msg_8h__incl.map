@@ -1,0 +1,16 @@
+<map id="qms_msg.h" name="qms_msg.h">
+<area shape="rect" id="node2" href="$qms__market_depth_8h.html" title="qms_marketDepth.h" alt="" coords="5,80,144,107"/>
+<area shape="rect" id="node4" href="$qms__group_8h.html" title="qms_group.h" alt="" coords="169,80,266,107"/>
+<area shape="rect" id="node5" href="$qms__account_8h.html" title="qms_account.h" alt="" coords="290,80,401,107"/>
+<area shape="rect" id="node6" href="$qms__deal_8h.html" title="qms_deal.h" alt="" coords="425,80,514,107"/>
+<area shape="rect" id="node7" href="$qms__order_8h.html" title="qms_order.h" alt="" coords="538,80,633,107"/>
+<area shape="rect" id="node8" href="$qms__limit_8h.html" title="qms_limit.h" alt="" coords="657,80,746,107"/>
+<area shape="rect" id="node9" href="$qms__deposit_8h.html" title="qms_deposit.h" alt="" coords="771,80,877,107"/>
+<area shape="rect" id="node10" href="$qms__plugin_info_8h.html" title="qms_pluginInfo.h" alt="" coords="902,80,1021,107"/>
+<area shape="rect" id="node3" href="$qms__price_vol_8h_source.html" title="qms_priceVol.h" alt="" coords="19,155,131,181"/>
+<area shape="rect" id="node11" href="$qms__item_8h.html" title="qms_item.h" alt="" coords="916,155,1007,181"/>
+<area shape="rect" id="node12" href="$qms__cs_8h.html" title="qms_cs.h" alt="" coords="810,229,889,256"/>
+<area shape="rect" id="node13" href="$qms__string_8h.html" title="qms_string.h" alt="" coords="913,229,1010,256"/>
+<area shape="rect" id="node16" href="$qms__tarray_8h.html" title="qms_tarray.h" alt="" coords="1035,229,1133,256"/>
+<area shape="rect" id="node14" href="$qms__exception_8h.html" title="qms_exception.h" alt="" coords="842,304,963,331"/>
+</map>

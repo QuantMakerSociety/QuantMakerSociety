@@ -634,11 +634,11 @@ public:
 	}
 
 	/**
-	* Converts an offset to a pointer.
-	* @param T Type of pointer.
-	* @param offset Offset
-	* @return Pointer.
-	*/
+	 * Converts an offset to a pointer.
+	 * @tparam T Type of pointer.
+	 * @param offset Offset in memory mapped file.
+	 * @return Pointer of type T.
+	 */
 	template < typename T > T* ToPointer(uint32_t offset)
 	{
 		if (0 != offset && 0 != data) {

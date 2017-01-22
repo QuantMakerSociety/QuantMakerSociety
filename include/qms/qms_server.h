@@ -21,8 +21,7 @@ struct qms_barData;
  * @param ptr User supplied pointer.
  * @return Depends on message.
  */
-typedef int(
-	__stdcall* qms_listener)(QMSServer& svr, const qms_msg& msg, void* ptr);
+typedef int (* qms_listener)(QMSServer& svr, const qms_msg& msg, void* ptr);
 
 /**
  * Called when the bar data changed.
@@ -105,8 +104,19 @@ struct QMSServer
 		double       stopPrice,
 		const char*  desc) = 0;
 
+	/**
+	 * Cancels a limit order.
+	 * @param id Id of limit order.
+	 */
 	virtual int CancelLimit(uint32_t id) = 0;
 
+	/**
+	 * Edits a limit order.
+	 * @param id Id of limit order.
+	 * @param newPrice New Price.
+	 * @param newStop New Stop Price.
+	 * @return < 0 on error.
+	 */
 	virtual int EditLimit(uint32_t id, double newPrice, double newStop) = 0;
 
 	/**

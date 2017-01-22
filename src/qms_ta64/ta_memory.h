@@ -1,3 +1,4 @@
+#pragma once
 #ifndef TA_MEMORY_H
 #define TA_MEMORY_H
 

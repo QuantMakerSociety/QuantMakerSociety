@@ -1,0 +1,25 @@
+var struct_q_m_s_server =
+[
+    [ "~QMSServer", "struct_q_m_s_server.html#ac74ff1cf3caf7052ab0675543b29f3b0", null ],
+    [ "AddQuant", "struct_q_m_s_server.html#a7f7bfc6459cccad52d1fef27839c7516", null ],
+    [ "CancelLimit", "struct_q_m_s_server.html#ae48b95be77ac87665f2c5a93fd7c2095", null ],
+    [ "EditLimit", "struct_q_m_s_server.html#a1640a538fbdb80274832025ad2d19faf", null ],
+    [ "GetAccount", "struct_q_m_s_server.html#aa28e0937b92a24190ae6237ba71921e4", null ],
+    [ "GetAccountDeals", "struct_q_m_s_server.html#a3bf136c5cd82543d88a6c1987738eb02", null ],
+    [ "GetAccountDeposits", "struct_q_m_s_server.html#a5bfbab0bdf3a518c601ad4850248a219", null ],
+    [ "GetAccountExposure", "struct_q_m_s_server.html#a8bf9a964c2f96034a8766f85a20e549a", null ],
+    [ "GetBanks", "struct_q_m_s_server.html#a672e7a3a6915fedfc27f1c84f92a8230", null ],
+    [ "GetConnectionStatus", "struct_q_m_s_server.html#a540b7feff8a59a921b11abb81dcea566", null ],
+    [ "GetCurrencies", "struct_q_m_s_server.html#aa831d62d44465b491e4fb5e74e0d3958", null ],
+    [ "GetDeal", "struct_q_m_s_server.html#a2c0ccb94ea3c1f4325e61984bfa60afd", null ],
+    [ "GetGroup", "struct_q_m_s_server.html#a8cc0419d0ee50063af94416a3dcdccca", null ],
+    [ "GetGroupAccounts", "struct_q_m_s_server.html#a1f69249022b4e196abcfaca923780a48", null ],
+    [ "GetGroups", "struct_q_m_s_server.html#a757ebc4799a16fcfb6b0f82be21e2244", null ],
+    [ "GetMarketDepth", "struct_q_m_s_server.html#a0a79839d425db69c252f6f314391f02e", null ],
+    [ "GetSymbols", "struct_q_m_s_server.html#a5470afa5429d3106571208953c02869b", null ],
+    [ "PlaceLimit", "struct_q_m_s_server.html#a723b093a4615afcdc718a26c8c283b50", null ],
+    [ "PlaceMarketOrder", "struct_q_m_s_server.html#a09c6b99435ffb85e0e6b6ab448c1a4c5", null ],
+    [ "RegisterBarDataListener", "struct_q_m_s_server.html#a7a9949e9618038f74491c2af9f6c7043", null ],
+    [ "StartQuotes", "struct_q_m_s_server.html#aea61ff712807721189a30457568e6847", null ],
+    [ "USec", "struct_q_m_s_server.html#a8649ff8e94b4d5117c1cef7972992b50", null ]
+];

@@ -749,6 +749,9 @@ struct qms_acctCfgChanged : public qms_msg
 	const qms_item* pItem;
 };
 
+/**
+ * Called when an item of a configuration has being changed
+ */
 struct qms_itemChanged : public qms_msg
 {
 	enum
@@ -759,10 +762,20 @@ struct qms_itemChanged : public qms_msg
 		ID = gbxam_itemChanged,
 	};
 
+	/**
+	 * Not used.
+	 */
 	int32_t pad;
 
+	/**
+	 * Pointer to item. 
+	 */
 	const qms_item* pItem;
 
+	/**
+	 * Constructor.
+	 * @param pItem_ Pointer to item.
+	 */
 	qms_itemChanged(const qms_item* pItem_)
 	{
 		msg   = ID;

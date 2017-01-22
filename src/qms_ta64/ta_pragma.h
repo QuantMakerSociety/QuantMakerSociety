@@ -1,3 +1,4 @@
+#pragma once
 /* TA-LIB Copyright (c) 1999-2008, Mario Fortier
  * All rights reserved.
  *

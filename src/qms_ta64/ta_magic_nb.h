@@ -1,3 +1,4 @@
+#pragma once
 #ifndef TA_MAGIC_NB_H
 #define TA_MAGIC_NB_H
 

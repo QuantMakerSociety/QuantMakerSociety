@@ -1,3 +1,4 @@
+#pragma once
 #ifndef TA_GLOBAL_H
 #define TA_GLOBAL_H
 

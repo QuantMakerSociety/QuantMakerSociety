@@ -6,10 +6,32 @@
 #include "qms_string.h"
 #include "qms_tarray.h"
 
+#define A16 __declspec(align(16))
+
+/**
+ * @def A16
+ * Shorthand to __declspec(align(16))
+ */
+
+ /**
+  * Moving average types.
+  */
+enum qms_ma {
+	qms_sma,   ///< Simple moving average.
+	qms_ema,   ///< Exponential moving average.
+	qms_wma,   ///< Weighted moving average.
+	qms_dema,  ///< Dema
+	qms_tema,  ///< Tema
+	qms_trima, ///< Trima
+	qms_kama,  ///< Kama
+	qms_mama,  ///< Mama
+	qms_t3,    ///< T3
+};
+
 /**
  * Configuration Item.
  */
-__declspec(align(16)) struct qms_item
+struct A16 qms_item
 {
 	/**
 	 * Types of items.
@@ -96,7 +118,7 @@ __declspec(align(16)) struct qms_item
 			int32_t   idAccount;  ///< id of account.
 			int32_t   idSymbol;   ///< Id of symbol. -1 for any symbol.
 			bool      isSorted;   ///< Set to true if is a sorted node.
-		} node;
+		} node; ///< Node.
 	} val; ///< Values
 	// 64 + 452 = 512
 
@@ -129,6 +151,10 @@ __declspec(align(16)) struct qms_item
 	 */
 	void SetAcct(int x);
 
+	/**
+	 * Set Moving Average type.
+	 * @param x Moving average type. @see qms_ma
+	 */
 	void SetMA(int x);
 
 	/**
@@ -320,6 +346,10 @@ __declspec(align(16)) struct qms_item
 		return AddItem(name, TP_NODE);
 	}
 
+	/**
+	 * Creates a copy  of an item and adds it to this node.
+	 * @param itm Item to copy.
+	 */
 	qms_item* AddCopy(const qms_item& itm);
 
 	/**

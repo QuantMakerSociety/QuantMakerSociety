@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['pad',['pad',['../structqms__get_plugin_info.html#a3b669a1fb279d8d2fcf23f9a47189cad',1,'qms_getPluginInfo::pad()'],['../structqms__config_changed.html#a85bf97767f2b51107c84da262704a859',1,'qms_configChanged::pad()'],['../structqms__item_changed.html#ac340a92c83ced349d49a00393b6269b9',1,'qms_itemChanged::pad()']]],
+  ['pad16',['pad16',['../structqms__order.html#a4ed5cd502e010a948c3c4134e6a9e018',1,'qms_order']]],
+  ['pad2',['pad2',['../structqms__market_depth.html#a558e17b2bed98e80e1a76a3dbd164aeb',1,'qms_marketDepth']]],
+  ['pad32',['pad32',['../structqms__order.html#af27cc349a8fa859f4df8b8ef7c8afa3d',1,'qms_order']]],
+  ['pad4',['pad4',['../structqms__market_depth.html#a397d94ea11b1f09e9a507bcb642ed832',1,'qms_marketDepth']]],
+  ['pad64',['pad64',['../structqms__order.html#a76098b12d896ae41589a1611ead5cb26',1,'qms_order']]],
+  ['pad8',['pad8',['../structqms__limit.html#aff01e5ab7a4ec216e97c1cd70bc1a440',1,'qms_limit']]],
+  ['parent',['parent',['../structqms__item.html#a9e6536a05758d0cd3f09d3758bfe1d3a',1,'qms_item']]],
+  ['pcfg',['pCfg',['../structqms__config_changed.html#a092a3e1c380fe799cddd4323936865e0',1,'qms_configChanged']]],
+  ['pexposure',['pExposure',['../structqms__bar_data.html#afefc90e3da01691ff9e9aed95f1631c7',1,'qms_barData']]],
+  ['phdr',['pHdr',['../classqms_1_1mm_1_1_m_m_vector_base.html#a6ca87275616a922d95560d555410de8b',1,'qms::mm::MMVectorBase']]],
+  ['pinfo',['pInfo',['../structqms__get_plugin_info.html#a0dd845043fa8a754117284ce99bbf88e',1,'qms_getPluginInfo']]],
+  ['pitem',['pItem',['../structqms__acct_cfg_changed.html#a24b8e8cd8a22a12fa43d8e824d2cfb5e',1,'qms_acctCfgChanged::pItem()'],['../structqms__item_changed.html#aa8c405838619316b4a740222bfd03be2',1,'qms_itemChanged::pItem()']]],
+  ['placelimit',['PlaceLimit',['../struct_q_m_s_server.html#a723b093a4615afcdc718a26c8c283b50',1,'QMSServer']]],
+  ['placemarketorder',['PlaceMarketOrder',['../struct_q_m_s_server.html#a09c6b99435ffb85e0e6b6ab448c1a4c5',1,'QMSServer']]],
+  ['pointertooffset',['PointerToOffset',['../classqms_1_1mm_1_1_m_m_heap.html#af299bb6f5461bc9e3142a6f46688a190',1,'qms::mm::MMHeap']]],
+  ['prev',['prev',['../structqms__exposure_trade.html#ab50cebc6f5cce6bfdf3113e6e3b6165f',1,'qms_exposureTrade::prev()'],['../structqms__item.html#a4262e216370fea75b5aba5c2706fb53c',1,'qms_item::prev()']]],
+  ['price',['price',['../structqms__bar_data.html#ae1c5d7a30f606ce0a95b37ff3fa3b352',1,'qms_barData::price()'],['../structqms__deal.html#a906327f60fd9064e42b64b0ddcce00ac',1,'qms_deal::price()'],['../structqms__exposure_trade.html#a91da11dbd267121d12593780890095cd',1,'qms_exposureTrade::price()'],['../structqms__limit.html#afb0a1b87e717d286dc8ec0b3281c92f6',1,'qms_limit::price()'],['../structqms__order.html#a493b3ba619f585cf3a2f962a3c4df8ae',1,'qms_order::price()'],['../structqms__price_vol.html#ab9d4d32b12fc85d2510b140a4dd83f73',1,'qms_priceVol::price()']]],
+  ['ptr',['ptr',['../structqms__bar_data.html#abd6af11d686668b9de1b4c658dd09a7d',1,'qms_barData::ptr()'],['../structqms__msg_added.html#a80a99265b1b861940d88118b7c905c65',1,'qms_msgAdded::ptr()']]]
+];
