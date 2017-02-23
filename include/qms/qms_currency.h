@@ -35,13 +35,3 @@ struct qms_currency
  * Array of currencies.
  */
 typedef qms_tarray< qms_currency > qms_currencyArray;
-
-/**
- * Memory mapped vector of currencies.
- */
-extern qms::mm::MMVector< qms_currency > qms_currencyMM;
-
-/**
- * Path to currency memory mapped file.
- */
-#define qms_currencyMM_path "Local\\qms_currencyMM"

@@ -95,12 +95,3 @@ struct qms_limit
 */
 typedef qms_tarray< qms_limit > qms_limitArray;
 
-/**
- * Memory mapped file of limits.
- */
-extern qms::mm::MMVector< qms_limit > qms_limitMM;
-
-/**
- * Path to vector to limits.
- */
-#define qms_limitMM_path "Local\\qms_limitMM"

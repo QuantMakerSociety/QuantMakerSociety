@@ -68,19 +68,3 @@ struct qms_group
 */
 typedef qms_tarray< qms_group > qms_groupArray;
 
-/**
- * Memory mapped file of groups.
- */
-extern qms::mm::MMVector< qms_group > qms_groupMM;
-
-/**
- * Find a group in the memory mapped vector.
- * @param id Id of vector.
- * @return Index of group.
- */
-extern int qms_groupMM_find(uint32_t id);
-
-/**
- * Path to groups.
- */
-#define qms_groupMM_path "Local\\qms_groupMM"

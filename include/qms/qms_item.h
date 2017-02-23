@@ -45,7 +45,7 @@ struct A16 qms_item
 		TP_BOOL,    ///< Boolean
 		TP_I64,     ///< 64 bit signed integer.
 		TP_U64,     ///< 64 bit unsigned integer.
-		TP_TIME,    ///< 64 bit unix time.
+		TP_TIME,    ///< 64 bit UNIX time.
 		TP_DBL,     ///< Double
 		TP_BTN,     ///< Button.
 		TP_CHAR,    ///< Single character.
@@ -64,54 +64,53 @@ struct A16 qms_item
 	/**
 	 * Points to previous item. (If its on a list or tree)
 	 */
-	qms_item* prev;
-	// 0 + 8 = 8
+	qms_item* prev; // 0 + 8 = 8
 
 	/**
 	 * Points to next item. (If its on a list or tree)
 	 */
-	qms_item* next;
-	// 8 + 8 = 16
+	qms_item* next; // 8 + 8 = 16
 
 	/**
 	 * Points to parent item. (If its on tree)
 	 */
-	qms_item* parent;
-	// 16 + 8 = 24
+	qms_item* parent; // 16 + 8 = 24
 
 	/**
 	 * Name of item.
+	 * A string up to MAX_NAME_SIZE - 1 bytes in length.
 	 */
-	char name[MAX_NAME_SIZE];
-	// 24 + 39 = 63
+	char name[MAX_NAME_SIZE]; // 24 + 39 = 63
 
 	/**
 	 * Type of item.
 	 */
-	char type;
-	// 63 + 1 = 64
+	uint8_t type; // 63 + 1 = 64
 
 	/**
 	 * Union of values.
 	 */
 	union UValues
 	{
-		bool     b;                 ///< Boolean
-		char     c;                 ///< Signed character.
-		uint8_t  u8;                ///< Unsigned character.
-		int32_t  i32;               ///< Signed 32 bit integer.
-		uint32_t u32;               ///< Unsigned 32 bit integer.
+		char     str[MAX_STR_SIZE]; ///< String
+		__m128   m128;              ///< 128 bit
 		int64_t  i64;               ///< Signed 64 bit integer.
 		uint64_t u64;               ///< 64 bit unsigned integer.
 		double   dbl;               ///< Signed double.
-		__m128   m128;              ///< 128 bit
-		char     str[MAX_STR_SIZE]; ///< String of up to (MAX_STR_SIZE - 1)
-		                            /// characters.
+		int32_t  i32;               ///< Signed 32 bit integer.
+		uint32_t u32;               ///< Unsigned 32 bit integer.
+		int16_t  i16;               ///< 16 bit signed integer.
+		uint16_t u16;               ///< 16 bit unsigned integer.
+		uint8_t  u8;                ///< 8 bit unsigned integer.
+		int8_t   i8;                ///< 8 bit signed integer.
+		wchar_t  wc;                ///< wide character. (normally the same size as u16, but it could be u32)
+		char     c;                 ///< Character (normally the same as i8).
+		bool     b;                 ///< Boolean (normally of size int32_t, in theory it could be just one bit)
+
 		/**
 		 * Node. In case on requires a hierarchy.
 		 */
-		struct node_t
-		{
+		struct node_t {
 			qms_item* firstChild; ///< Points to first child.
 			qms_item* lastChild;  ///< Points to last child
 			int32_t   idGroup;    ///< Id of group.
@@ -119,7 +118,7 @@ struct A16 qms_item
 			int32_t   idSymbol;   ///< Id of symbol. -1 for any symbol.
 			bool      isSorted;   ///< Set to true if is a sorted node.
 		} node; ///< Node.
-	} val; ///< Values
+	} val; ///< Values 
 	// 64 + 452 = 512
 
 	/**
@@ -506,6 +505,8 @@ struct A16 qms_item
 	qms_item* MakeCopy() const;
 
 }; // 512 bytes
+
+static_assert(sizeof(qms_item) == 512, "qms_item must be of 512 bytes.");
 
 /**
 * Array of items.

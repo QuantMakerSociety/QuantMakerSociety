@@ -82,29 +82,3 @@ struct qms_marketDepth
 	}
 }; // 1056 + 1,024 = 2,080 / 16 = 130
 
-/**
- * Memory mapped vector of market depths.
- */
-extern qms::mm::MMVector< qms_marketDepth > qms_marketDepthMM;
-
-/**
- * Path to vector of market depths.
- */
-#define qms_marketDepthMM_path "Local\\qms_marketDepthMM"
-
-/**
- * Finds market depth
- * @param ids Id of symbol.
- * @param idb Id of bank.
- * @return poitner to market depth if found. 0 if not.
- */
-const qms_marketDepth* qms_marketDepthMM_find(uint32_t ids, uint32_t idb);
-
-/**
-* Finds index of market depth
-* @param ids Id of symbol.
-* @param idb Id of bank.
-* @return Index of market depth on success.
-* @return -(insertion_point + 1) on failure.
-*/
-int qms_marketDepthMM_findIdx(uint32_t ids, uint32_t idb);

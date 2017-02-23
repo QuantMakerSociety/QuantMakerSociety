@@ -124,6 +124,7 @@
     <ClInclude Include="..\..\include\qms\qms_mm.h" />
     <ClInclude Include="..\..\include\qms\qms_msg.h" />
     <ClInclude Include="..\..\include\qms\qms_order.h" />
+    <ClInclude Include="..\..\include\qms\qms_pendingDeal.h" />
     <ClInclude Include="..\..\include\qms\qms_pluginInfo.h" />
     <ClInclude Include="..\..\include\qms\qms_priceData.h" />
     <ClInclude Include="..\..\include\qms\qms_priceVol.h" />

@@ -51,27 +51,3 @@ struct qms_deposit
 */
 typedef qms_tarray<qms_deposit> qms_depositArray;
 
-/**
- * Memory map of deposits.
- * For use in process.
- */
-extern qms::mm::MMVector<qms_deposit> qms_depositMM;
-
-/**
- * path to map of deposits.
- */
-#define qms_depositMM_path "Local\\qms_depositMM"
-
-/**
- * Finds a deposit.
- * @param id Id of deposit.
- * @return Pointer to deposit if found. NULL if not.
- */
-qms_deposit * qms_depositMM_find(uint32_t id);
-
-/**
- * Find index of deposit.
- * @param id Id of deposit.
- * @return Index of deposit. < 0 of not found.
- */
-int qms_depositMM_findIdx(uint32_t id);

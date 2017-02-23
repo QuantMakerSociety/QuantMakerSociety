@@ -27,20 +27,3 @@ struct qms_bankInfo
  */
 typedef qms_tarray< qms_bankInfo > qms_bankInfoArray;
 
-/**
- * Memory mapped vector of banks.
- */
-extern qms::mm::MMVector< qms_bankInfo > qms_bankInfoMM;
-
-/**
- * Address of memory mapped vector of banks.
- */
-#define qms_bankInfoMM_path "Local\\qms_bankInfoMM"
-
-/**
- * Find bank from its id.
- * @param id Id of bank.
- * @return Index of bank on success.
- * @return -1 on failure.
- */
-int qms_bankInfoMM_find(uint16_t id);

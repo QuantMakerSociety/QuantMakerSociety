@@ -49,13 +49,3 @@ struct qms_exposure
  */
 typedef qms_tarray< qms_exposure > qms_exposureArray;
 
-/**
- * Memory map of exposure.
- * for use in process.
- */
-extern qms::mm::MMVector< qms_exposure > qms_exposureMM;
-
-/**
- * Path to exposure.
- */
-#define qms_exposureMM_path "Local\\qms_exposureMM"

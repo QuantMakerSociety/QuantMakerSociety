@@ -9,6 +9,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LIB", "LIB", "{E38AF67E-4FF
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "qms", "src\qms\qms.vcxproj", "{16A2880B-82AB-887C-0B27-9F7C772F947C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PLUGIN", "PLUGIN", "{FB52F5F8-E7B5-849D-903B-BD537C7D5020}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TwoMA", "src\Examples\TwoMA\TwoMA.vcxproj", "{ED2D320E-5942-5ABF-22C4-FD1E8E9756F0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -23,6 +27,10 @@ Global
 		{16A2880B-82AB-887C-0B27-9F7C772F947C}.Debug|x64.Build.0 = Debug|x64
 		{16A2880B-82AB-887C-0B27-9F7C772F947C}.Release|x64.ActiveCfg = Release|x64
 		{16A2880B-82AB-887C-0B27-9F7C772F947C}.Release|x64.Build.0 = Release|x64
+		{ED2D320E-5942-5ABF-22C4-FD1E8E9756F0}.Debug|x64.ActiveCfg = Debug|x64
+		{ED2D320E-5942-5ABF-22C4-FD1E8E9756F0}.Debug|x64.Build.0 = Debug|x64
+		{ED2D320E-5942-5ABF-22C4-FD1E8E9756F0}.Release|x64.ActiveCfg = Release|x64
+		{ED2D320E-5942-5ABF-22C4-FD1E8E9756F0}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -30,5 +38,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{74B7879E-6084-E2A9-899D-D05175C91738} = {4869F67E-B4D3-AAF5-FD11-5C9B69BB884A}
 		{16A2880B-82AB-887C-0B27-9F7C772F947C} = {E38AF67E-4FF5-AAF5-9833-5C9B04DD884A}
+		{ED2D320E-5942-5ABF-22C4-FD1E8E9756F0} = {FB52F5F8-E7B5-849D-903B-BD537C7D5020}
 	EndGlobalSection
 EndGlobal

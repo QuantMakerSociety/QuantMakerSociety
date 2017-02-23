@@ -93,4 +93,5 @@ include "src/qms_ta64/qms_ta64.lua"
 group "LIB"
 include "src/qms/qms.lua"
 
-
+group "PLUGIN"
+include "src/Examples/TwoMA/TwoMA.lua"

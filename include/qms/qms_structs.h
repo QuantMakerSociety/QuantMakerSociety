@@ -7,6 +7,7 @@
 #include "qms_barData.h"
 #include "qms_currency.h"
 #include "qms_deal.h"
+#include "qms_pendingDeal.h"
 #include "qms_deposit.h"
 #include "qms_exposure.h"
 #include "qms_exposureTrade.h"

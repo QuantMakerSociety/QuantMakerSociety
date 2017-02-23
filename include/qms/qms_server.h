@@ -21,32 +21,52 @@ struct qms_barData;
  * @param ptr User supplied pointer.
  * @return Depends on message.
  */
-typedef int (* qms_listener)(QMSServer& svr, const qms_msg& msg, void* ptr);
+typedef int(__stdcall * qms_listener)(QMSServer& svr, const qms_msg& msg, void* ptr);
 
 /**
  * Called when the bar data changed.
  * @param svr Server instance.
  * @param msg Message received. @see eBarDataMsg
  * @param bd Bar data.
+ * @param pExtra Extra data (in case is an order message.)
  */
 typedef void(__stdcall* qms_onBarDataChanged)(
 	QMSServer&         svr,
 	int                msg,
-	const qms_barData& bd);
+	const qms_barData& bd,
+	const void * pExtra);
 
 /**
  * Retrieve icon. (Optional)
  */
 typedef HICON(__stdcall* qms_getIcon)();
 
+struct qms_quant;
+
+/**
+ * Prevent creation of copy constructor and destructor.
+ */
+class QMSNoCopy {
+private:
+	QMSNoCopy(const QMSNoCopy& x);
+	QMSNoCopy& operator = (QMSNoCopy& x);
+public:
+	QMSNoCopy() {}
+};
+
 /**
 * API Server.
 */
-struct QMSServer
+struct QMSServer : QMSNoCopy
 {
 	/**
-	* Virtual Destructor.
-	*/
+	 * Default constructor.
+	 */
+	QMSServer() {}
+
+	/**
+	 * Virtual Destructor.
+	 */
 	virtual ~QMSServer()
 	{
 	}
@@ -232,6 +252,82 @@ struct QMSServer
 	* @param tf
 	*/
 	virtual void AddQuant(qms_listener ltn, int ids, int ida, int tf) = 0;
+
+	/**
+	 * Places a market order from a quant.
+	 * Use this when you want the quant to receive a notification.
+	 * @param who Quant that created the market order.
+	 * @param idAccount Id of account.
+	 * @param idSymbol Id of symbol
+	 * @param stratId If of strategy.
+	 * @param volume Volume (Negative for short).
+	 * @param price Price.
+	 * @param desc Description.
+	 * @return 0 on success. -1 on failure.
+	 */
+	virtual int Q_PlaceMarketOrder(qms_quant& who, int idAccount, int idSymbol, uint64_t stratId, double volume, double price, char * desc) = 0;
+
+	/**
+	 * Places a limit order from a quant.
+	 * Use this when you want the quant to receive a notification.
+	 * @param who Quant that created the limit order.
+	 * @param idAccount Id of the account.
+	 * @param idSymbol Id of the symbol.
+	 * @param stratId Strategy id.
+	 * @param mode Mode
+	 * @param tif Time in force.
+	 * @param volume Volume.
+	 * @param price Price
+	 * @param stopPrice Stop price
+	 * @param desc Description
+	 * @return 0 on success, -1 on failure.
+	 */
+	virtual int Q_PlaceLimit(
+		qms_quant&   who,
+		int          idAccount,
+		int          idSymbol,
+		uint64_t     stratId,
+		char         mode,
+		char         tif,
+		double       volume,
+		double       price,
+		double       stopPrice,
+		const char*  desc) = 0;
+
+
+	/**
+	 * Cancels a limit order.
+	 * Use this when you want the quant to receive a notification.
+	 * @param who Quant that created the limit order.
+	 * @param id Id of limit order.
+	 */
+	virtual int Q_CancelLimit(qms_quant& who, uint32_t id) = 0;
+
+	/**
+	 * Edits a limit order.
+	 * Use this when you want the quant to receive a notification.
+	 * @param who Quant that created the limit order.
+	 * @param id Id of limit order.
+	 * @param newPrice New Price.
+	 * @param newStop New Stop Price.
+	 * @return < 0 on error.
+	 */
+	virtual int Q_EditLimit(qms_quant& who, uint32_t id, double newPrice, double newStop) = 0;
+
+	/**
+	 * Sets current status message. (If there is a chart attached)
+	 * @param who Quant that is setting the message.
+	 * @param statusMsg Status message.
+	 */
+	virtual void Q_UpdateStatusMsg(qms_quant& who, const char * statusMsg) = 0;
+
+	/**
+	 * Logs to the chart log window. (If there is a chart attached)
+	 * The log window is limited to 64 lines
+	 * @param who Quant that is setting the message.
+	 * @param statusMsg Status message.
+	 */
+	virtual void Q_Log(qms_quant& who, const char * fmt, ...) = 0;
 };
 
 #pragma endregion

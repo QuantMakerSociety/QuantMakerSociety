@@ -74,20 +74,3 @@ struct qms_account
 */
 typedef qms_tarray< qms_account > qms_accountArray;
 
-/**
- * Memory mapped file of accounts.
- */
-extern qms::mm::MMVector< qms_account > qms_accountMM;
-
-/**
- * Path to memory mapped file of accounts.
- */
-#define qms_accountMM_path "Local\\qms_accountMM"
-
-/**
- * Finds an item in the memory mapped file.
- * @param id Id of item.
- * @return Index of item on success.
- * @return -1 on failure.
- */
-int qms_accountMM_find(uint32_t id);

@@ -64,28 +64,3 @@ struct qms_deal
 * For use in a dll.
 */
 typedef qms_tarray< qms_deal > qms_dealArray;
-
-/**
- * Memory mapped file of deals.
- * For use in process.
- */
-extern qms::mm::MMVector< qms_deal > qms_dealMM;
-
-/**
- * Path to deal memory mapped file.
- */
-#define qms_dealMM_path "Local\\qms_dealMM"
-
-/**
- * Finds a deal into the memory mapped file.
- * @param id Id of deal.
- * @return Pointer to deal if foudn.
- */
-qms_deal* qms_dealMM_find(uint32_t id);
-
-/**
- * Finds index of a deal.
- * @param id Id of deal.
- * @return Index of deal. < 0 if not found.
- */
-int qms_dealMM_findIdx(uint32_t id);
