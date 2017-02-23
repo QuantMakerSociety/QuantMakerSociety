@@ -1,1 +1,2 @@
-# lib6
+# lib64
+Libraries go here.
