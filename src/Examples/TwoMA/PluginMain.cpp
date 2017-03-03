@@ -76,32 +76,32 @@ __declspec(dllexport) int __stdcall PluginMain(QMSServer &svr, const qms_msg &ms
 
 	case qms_msgOrderPlaced::ID: {
 		const qms_msgOrderPlaced &m1 = (const qms_msgOrderPlaced &)msg;
-		const qms_order &o = *m1.order;
+		const qms_order &o = m1.order;
 	} break;
 
 	case qms_msgLimitPlaced::ID: {
 		const qms_msgLimitPlaced &m1 = (const qms_msgLimitPlaced &)msg;
-		const qms_limit &lmt = *m1.limit;
+		const qms_limit &lmt = m1.limit;
 	} break;
 
 	case qms_msgLimitChanged::ID: {
 		const qms_msgLimitChanged &m1 = (const qms_msgLimitChanged &)msg;
-		const qms_limit &lmt = *m1.limit;
+		const qms_limit &lmt = m1.limit;
 	} break;
 
 	case qms_msgLimitCancelled::ID: {
 		const qms_msgLimitCancelled &m1 = (const qms_msgLimitCancelled &)msg;
-		const qms_limit &lmt = *m1.limit;
+		const qms_limit &lmt = m1.limit;
 	} break;
 
 	case qms_msgOrderFailed::ID: {
 		const qms_msgOrderFailed &m1 = (const qms_msgOrderFailed &)msg;
-		const qms_order &o = *m1.order;
+		const qms_order &o = m1.order;
 	} break;
 
 	case qms_msgLimitFailed::ID: {
 		const qms_msgLimitFailed &m1 = (const qms_msgLimitFailed &)msg;
-		const qms_limit &lmt = *m1.limit;
+		const qms_limit &lmt = m1.limit;
 	} break;
 
 	case qms_msgDeposit::ID: {

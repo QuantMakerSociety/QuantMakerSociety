@@ -141,19 +141,19 @@ struct qms_msg
 	/**
 	* Id of message.
 	*/
-	uint8_t msg; // 0
+	uint8_t msg; // 0 + 1 = 1
 
 	/**
 	* Message flags.
 	* This will depend on the message.
 	*/
-	uint8_t flg; // 0 + 1 = 1
+	uint8_t flg; // 1 + 1 = 2
 
 	/**
 	* Message len.
 	*/
-	uint16_t len; // 1 + 1 = 2
-};                // 4 bytes
+	uint16_t len; // 2 + 2 = 4
+};
 
 /**
 * Information string.
@@ -361,12 +361,12 @@ struct qms_msgDealFilled : public qms_msg
 	/**
 	* Id of deal.
 	*/
-	uint32_t idDeal; // 4
+	uint32_t idDeal; // 4 + 4 = 8
 
 	/**
 	* Information on deal.
 	*/
-	qms_deal deal; // 4 + 4 = 8
+	qms_deal deal; // 8 + 256 = 264
 
 	/**
 	* Constructor.
@@ -376,8 +376,17 @@ struct qms_msgDealFilled : public qms_msg
 		msg = ID;
 		flg = 0;
 		len = sizeof(qms_msgDealFilled);
+		memset(&deal,0,sizeof(deal));
 	}
-}; // 8 + 256 = 264
+
+	qms_msgDealFilled(const qms_deal& x)
+	{
+		msg = ID;
+		flg = 0;
+		len = sizeof(qms_msgDealFilled);
+		deal = x;
+	}
+}; 
 
 /**
 * A market order was placed.
@@ -392,25 +401,37 @@ struct qms_msgOrderPlaced : public qms_msg
 	/**
 	* Id of order.
 	*/
-	uint32_t idOrder; // 4
+	uint32_t idOrder; // 4 + 4 = 8
 
 	/**
-	* Points to order.
-	*/
-	const qms_order* order; // 8
+	 * Information on order.
+	 */
+	qms_order order; // 8 + 256 = 264
+
+	/**
+	 * Default constructor.
+	 */
+	qms_msgOrderPlaced()
+	{
+		msg = ID;
+		flg = 0;
+		len = sizeof(qms_msgOrderPlaced);
+		idOrder = 0;
+		memset(&order,0,sizeof(order));
+	}
 
 	/**
 	* Constructor,
 	* @param ido Id of order.
 	* @param po Pointer to order.
 	*/
-	qms_msgOrderPlaced(uint32_t ido = 0, qms_order* po = 0)
+	qms_msgOrderPlaced(const qms_order& o)
 	{
 		msg     = ID;
 		flg     = 0;
 		len     = sizeof(qms_msgOrderPlaced);
-		idOrder = ido;
-		order   = po;
+		idOrder = o.id;
+		order   = o;
 	}
 };
 
@@ -425,28 +446,36 @@ struct qms_msgLimitPlaced : public qms_msg
 	};
 
 	/**
-	* Id of limit.
-	*/
-	uint32_t idLimit;
+	 * Id of limit.
+	 */
+	uint32_t idLimit; // 4 + 4 = 8
 
 	/**
-	* Points to limit.
-	*/
-	const qms_limit* limit; // 8
+	 * Limit.
+	 */
+	qms_limit limit; // 8 + 256 = 264
 
 	/**
-	* Constructor.
-	* @param idl Id of limit.
-	* @param pl Pointer to limit.
+	* Default constructor.
 	*/
-	qms_msgLimitPlaced(uint32_t idl = 0, qms_limit* pl = 0)
+	qms_msgLimitPlaced()
 	{
-		msg     = ID;
-		flg     = 0;
-		len     = sizeof(qms_msgLimitPlaced);
-		idLimit = idl;
-		limit   = pl;
+		msg = ID;
+		flg = 0;
+		len = sizeof(qms_msgLimitPlaced);
+		idLimit = 0;
+		memset(&limit,0,sizeof(limit));
 	}
+
+	qms_msgLimitPlaced(const qms_limit& lmt)
+	{
+		msg = ID;
+		flg = 0;
+		len = sizeof(qms_msgLimitPlaced);
+		idLimit = lmt.id;
+		limit = lmt;
+	}
+
 }; // 16
 
 /**
@@ -462,13 +491,37 @@ struct qms_msgLimitChanged : public qms_msg
 	/**
 	* Id of limit.
 	*/
-	uint32_t idLimit; // 4
+	uint32_t idLimit; // 4 + 4 = 8,
 
 	/**
 	* Points to limit.
 	*/
-	const qms_limit* limit; // 8
-};                          // 16
+	qms_limit limit; // 8 + 256 = 264
+
+	/**
+	* Default constructor.
+	*/
+	qms_msgLimitChanged()
+	{
+		msg = ID;
+		flg = 0;
+		len = sizeof(qms_msgLimitChanged);
+		idLimit = 0;
+		memset(&limit,0,sizeof(limit));
+	}
+
+	/**
+	* Default constructor.
+	*/
+	qms_msgLimitChanged(const qms_limit& x)
+	{
+		msg = ID;
+		flg = 0;
+		len = sizeof(qms_msgLimitChanged);
+		idLimit = x.id;
+		limit = x;
+	}
+};
 
 /**
 * A limit was cancelled
@@ -483,13 +536,34 @@ struct qms_msgLimitCancelled : public qms_msg
 	/**
 	* Id of limit.
 	*/
-	uint32_t idLimit; // 4
+	uint32_t idLimit; // 4 + 4 = 8
 
 	/**
 	* Points to limit that was cancelled.
 	*/
-	const qms_limit* limit; // 8
-};                          // 16
+	qms_limit limit; // 8 + 8 = 16
+
+	/**
+	* Default constructor.
+	*/
+	qms_msgLimitCancelled()
+	{
+		msg = ID;
+		flg = 0;
+		len = sizeof(qms_msgLimitCancelled);
+		idLimit = 0;
+		memset(&limit,0,sizeof(limit));
+	}
+
+	qms_msgLimitCancelled(const qms_limit& x)
+	{
+		msg = ID;
+		flg = 0;
+		len = sizeof(qms_msgLimitCancelled);
+		idLimit = x.id;
+		limit = x;
+	}
+};
 
 /**
 * Failed to place order.
@@ -504,17 +578,17 @@ struct qms_msgOrderFailed : public qms_msg
 	/**
 	* Id of order.
 	*/
-	uint32_t idOrder; // 4
-
-	/**
-	* Points to order.
-	*/
-	const qms_order* order; // 8
+	uint32_t idOrder; // 4 + 4 = 8
 
 	/**
 	* Reason it failed.
 	*/
-	const char* reason; // 16
+	const char* reason; // 8 + 8 = 16
+
+	/**
+	* Points to order.
+	*/
+	qms_order order; // 16 + 256
 };
 
 /**
@@ -530,18 +604,39 @@ struct qms_msgLimitFailed : public qms_msg
 	/**
 	* Id of limit
 	*/
-	uint32_t idLimit; // 4
-
-	/**
-	* Points to limit that was cancelled.
-	*/
-	const qms_limit* limit; // 8
+	uint32_t idLimit; // 4 + 4 = 8
 
 	/**
 	* Reason it failed.
 	*/
-	const char* reason; // 16
-};                      // 24
+	const char* reason; // 8 + 8 = 16
+
+	/**
+	* Points to limit that was cancelled.
+	*/
+	qms_limit limit; // 16 + 256 = 
+
+
+	qms_msgLimitFailed()
+	{
+		msg = ID;
+		flg = 0;
+		len = sizeof(qms_msgLimitFailed);
+		idLimit = 0;
+		reason = 0;
+		memset(&limit, 0, sizeof(limit));
+	}
+
+	qms_msgLimitFailed(const qms_limit& lmt)
+	{
+		msg = ID;
+		flg = 0;
+		len = sizeof(qms_msgLimitFailed);
+		idLimit = lmt.id;
+		reason = 0;
+		limit = lmt;
+	}
+};
 
 /**
 * A deposit or a retirement was made.

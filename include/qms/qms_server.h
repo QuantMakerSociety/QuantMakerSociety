@@ -21,7 +21,7 @@ struct qms_barData;
  * @param ptr User supplied pointer.
  * @return Depends on message.
  */
-typedef int(__stdcall * qms_listener)(QMSServer& svr, const qms_msg& msg, void* ptr);
+typedef int( * qms_listener)(QMSServer& svr, const qms_msg& msg, void* ptr);
 
 /**
  * Called when the bar data changed.
@@ -30,7 +30,7 @@ typedef int(__stdcall * qms_listener)(QMSServer& svr, const qms_msg& msg, void* 
  * @param bd Bar data.
  * @param pExtra Extra data (in case is an order message.)
  */
-typedef void(__stdcall* qms_onBarDataChanged)(
+typedef void(* qms_onBarDataChanged)(
 	QMSServer&         svr,
 	int                msg,
 	const qms_barData& bd,
@@ -250,8 +250,9 @@ struct QMSServer : QMSNoCopy
 	* @param ids
 	* @param ida
 	* @param tf
+	* @param mode BAr mode.
 	*/
-	virtual void AddQuant(qms_listener ltn, int ids, int ida, int tf) = 0;
+	virtual void AddQuant(qms_listener ltn, int ids, int ida, int tf, int mode) = 0;
 
 	/**
 	 * Places a market order from a quant.
