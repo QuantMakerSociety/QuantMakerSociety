@@ -38,6 +38,7 @@ struct qms_barData
 	int                 barMode;       ///< Mode for bars.
 	int                 ida;           ///< Id of account
 	int                 ids;           ///< Id of symbol
+	int                 tf;            ///< Bar time frame.
 
 	/**
 	 * Constructor.

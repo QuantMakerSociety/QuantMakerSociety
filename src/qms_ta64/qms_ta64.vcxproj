@@ -55,7 +55,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>..\..\bin64</OutDir>
+    <OutDir>..\..\bin64\</OutDir>
     <IntDir>obj\x64\Debug\</IntDir>
     <TargetName>qms_ta64_x64_dbg</TargetName>
     <TargetExt>.dll</TargetExt>
