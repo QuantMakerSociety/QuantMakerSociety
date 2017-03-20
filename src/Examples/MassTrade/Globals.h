@@ -10,27 +10,33 @@
 /**
  * Enumerator for configuration items.
  */
-enum eCfgItem {
+enum eCfgItem
+{
 	/**
 	 * Number of orders per tick.
 	 */
 	eCfgItem_nOrdersPerTick,
 
 	/**
-	 * Trade distance, determines if a limit will be used instead of a market order.
+	 * Time in milliseconds between orders.
 	 */
-	eCfgItem_tradeDistance,
+	 eCfgITem_timeBetweenOrders,
 
-	/**
-	 * Volume in units.
-	 */
-	eCfgItem_volume,
+	 /**
+	  * Trade distance, determines if a limit will be used instead of a market order.
+	  */
+	  eCfgItem_tradeDistance,
+
+	  /**
+	   * Volume in units.
+	   */
+	   eCfgItem_volume,
 
 
-	/**
-	 * Number of configuration items.
-	 */
-	eCfgItem_count,
+	   /**
+		* Number of configuration items.
+		*/
+		eCfgItem_count,
 };
 
 #pragma region Globals
@@ -90,7 +96,8 @@ extern qms_pluginInfo g_pluginInfo;
 /**
  * Creates an uint64_t from two uint32_t
  */
-union u64_t {
+union u64_t
+{
 	/**
 	 * Next id
 	 */
@@ -119,7 +126,7 @@ union u64_t {
 	 */
 	u64_t()
 	{
-		low32  = (uint32_t)_InterlockedIncrement(&nextId);
+		low32 = (uint32_t)_InterlockedIncrement(&nextId);
 		high32 = g_pluginId;
 	}
 
@@ -134,7 +141,7 @@ union u64_t {
 	 * @param x What to copy.
 	 */
 	u64_t(const u64_t &x)
-	    : x64(x.x64)
+		: x64(x.x64)
 	{
 	}
 
@@ -143,7 +150,7 @@ union u64_t {
 	 * @param x What to set x64 to
 	 */
 	u64_t(uint64_t x)
-	    : x64(x)
+		: x64(x)
 	{
 	}
 
@@ -161,22 +168,22 @@ union u64_t {
 #pragma region FunctionDeclarations
 
 extern "C" {
-;
+	;
 
-/**
-* Plugin listener.
-* @param svr Server.
-* @param msg Message received.
-* @param ptr Pointer with context.
-* @return 0 on success.
-*/
-__declspec(dllexport) int __stdcall PluginMain(QMSServer &svr, const qms_msg &msg, void *ptr);
+	/**
+	* Plugin listener.
+	* @param svr Server.
+	* @param msg Message received.
+	* @param ptr Pointer with context.
+	* @return 0 on success.
+	*/
+	__declspec(dllexport) int __stdcall PluginMain(QMSServer &svr, const qms_msg &msg, void *ptr);
 
-/**
-* Get plugin 16x16 icon.
-* @return Handle of icon.
-*/
-__declspec(dllexport) HICON __stdcall PluginGetIcon();
+	/**
+	* Get plugin 16x16 icon.
+	* @return Handle of icon.
+	*/
+	__declspec(dllexport) HICON __stdcall PluginGetIcon();
 
 } // extern "C"
 #pragma endregion

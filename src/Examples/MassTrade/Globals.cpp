@@ -23,18 +23,22 @@ qms_item g_cfg[eCfgItem_count] = {
 		(int)0
 	},
 	{
+		"MS between orders",
+		(int)0
+	},
+	{
 		// Distance to place the trade. 
 		// 0 = Market order. 
 		// > 0 distance in pips for limit. 
 		// < 0 invalid.
 		"Limit Distance",
 		0.0
-	}, 
+	},
 	{
 		// Volume in units.
-		"Volume", 
+		"Volume",
 		10000.0
-	}, 
+	},
 };
 
 

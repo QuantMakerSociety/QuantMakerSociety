@@ -10,6 +10,8 @@ struct QuantState
 	int ida;           // Id of account.
 	int secondsPerBar; // Seconds per bar.
 	int ordersPerTick; ////< Order per tick.
+	int nextSide;
+	int64_t lastMS; ///< Last millisecond.
 
 	char useLimits;     // Set to 1 to use limits instead of market.
 	double td;
@@ -22,9 +24,9 @@ struct QuantState
 	double openPrice; // Open price.
 
 	const qms_account *pAccount;   // Pointer to account.
-	
+
 	const qms_symbol *pSymbol;     // Pointer to symbol.
-	
+
 	const qms_exposure *pExposure; // Pointer to exposure
 
 	uint32_t slId; ///< GBX order id for stop loss. 
