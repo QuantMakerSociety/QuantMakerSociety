@@ -34,14 +34,14 @@
 /* List of contributors:
  *
  *  Initial  Name/description
- *  -------------------------------------------------------------------
+ *  ---
  *  MF       Mario Fortier
  *
  *
  * Change history:
  *
  *  MMDDYY BY   Description
- *  -------------------------------------------------------------------
+ *  ---
  *  120802 MF   Template creation.
  *
  */
@@ -114,7 +114,7 @@
  * Output = double
  * 
  * Optional Parameters
- * -------------------
+ * ---
  * optInTimePeriod:(From 2 to 100000)
  *    Number of period
  * 

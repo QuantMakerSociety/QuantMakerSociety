@@ -34,14 +34,14 @@
 /* List of contributors:
  *
  *  Initial  Name/description
- *  -------------------------------------------------------------------
+ *  ---
  *  MF       Mario Fortier
  *
  *
  * Change history:
  *
  *  MMDDYY BY   Description
- *  -------------------------------------------------------------------
+ *  ---
  *  112400 MF   Template creation.
  *  052603 MF   Adapt code to compile with .NET Managed C++
  *
@@ -161,7 +161,7 @@
  * Output = double, double
  * 
  * Optional Parameters
- * -------------------
+ * ---
  * optInFastK_Period:(From 1 to 100000)
  *    Time period for building the Fast-K line
  * 
@@ -323,7 +323,7 @@
     * corresponding K function.
     *
     *                    (Today's Close - LowestLow)
-    *  FASTK(Kperiod) =  --------------------------- * 100
+    *  FASTK(Kperiod) =  --- * 100
     *                     (HighestHigh - LowestLow)
     *   
     *  FASTD(FastDperiod, MA type) = MA Smoothed FASTK over FastDperiod

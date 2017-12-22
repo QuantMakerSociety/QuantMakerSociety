@@ -35,13 +35,13 @@
 /* List of contributors:
  *
  *  Initial  Name/description
- *  -------------------------------------------------------------------
+ *  ---
  *  CM		 Craig Miller  (c-miller@users.sourceforge.net)
  *
  * Change history:
  *
  *  MMDDYY BY    Description
- *  -------------------------------------------------------------------
+ *  ---
  *  011707 CM    First version.
  */
 

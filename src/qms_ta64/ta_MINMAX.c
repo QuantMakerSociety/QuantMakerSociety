@@ -34,13 +34,13 @@
 /* List of contributors:
  *
  *  Initial  Name/description
- *  -------------------------------------------------------------------
+ *  ---
  *  AC       Angelo Ciceri
  *
  * Change history:
  *
  *  MMDDYY BY   Description
- *  -------------------------------------------------------------------
+ *  ---
  *  120906 AC   Creation
  *
  */
@@ -114,7 +114,7 @@
  * Output = double, double
  * 
  * Optional Parameters
- * -------------------
+ * ---
  * optInTimePeriod:(From 2 to 100000)
  *    Number of period
  * 

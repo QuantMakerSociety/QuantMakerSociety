@@ -34,14 +34,14 @@
 /* List of contributors:
  *
  *  Initial  Name/description
- *  -------------------------------------------------------------------
+ *  ---
  *  JP       John Price <jp_talib@gcfl.net>
  *
  *
  * Change history:
  *
  *  MMDDYY BY   Description
- *  -------------------------------------------------------------------
+ *  ---
  *  070203 JP   Initial.
  *
  */
@@ -114,7 +114,7 @@
  * Output = double
  * 
  * Optional Parameters
- * -------------------
+ * ---
  * optInTimePeriod:(From 2 to 100000)
  *    Number of period
  * 

@@ -34,14 +34,14 @@
 /* List of contributors:
  *
  *  Initial  Name/description
- *  -------------------------------------------------------------------
+ *  ---
  *  MF       Mario Fortier
  *
  *
  * Change history:
  *
  *  MMDDYY BY   Description
- *  -------------------------------------------------------------------
+ *  ---
  *  130101 MF   First version.
  *  111503 MF   Add TA_DEF_UI_Input_Price_CV
  */

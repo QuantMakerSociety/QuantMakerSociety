@@ -34,14 +34,14 @@
 /* List of contributors:
  *
  *  Initial  Name/description
- *  -------------------------------------------------------------------
+ *  ---
  *  RM       Robert Meier
  *  MF       Mario Fortier
  *
  * Change history:
  *
  *  MMDDYY BY     Description
- *  -------------------------------------------------------------------
+ *  ---
  *  120307 RM     Initial Version
  *  120907 MF     Handling of a few limit cases
  */
@@ -115,7 +115,7 @@
  * Output = double, double, double
  * 
  * Optional Parameters
- * -------------------
+ * ---
  * optInTimePeriod:(From 2 to 100000)
  *    Number of period
  * 

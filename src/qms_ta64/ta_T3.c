@@ -34,14 +34,14 @@
 /* List of contributors:
  *
  *  Initial  Name/description
- *  -------------------------------------------------------------------
+ *  ---
  *  MHL      Matthew Lindblom
  *  MF       Mario Fortier
  *
  * Change history:
  *
  *  MMDDYY BY   Description
- *  -------------------------------------------------------------------
+ *  ---
  *  120802 MF   Template creation.
  *  032003 MHL  Implementation of T3
  *  040503 MF   Adapt for compatibility with published code
@@ -128,7 +128,7 @@
  * Output = double
  * 
  * Optional Parameters
- * -------------------
+ * ---
  * optInTimePeriod:(From 2 to 100000)
  *    Number of period
  * 

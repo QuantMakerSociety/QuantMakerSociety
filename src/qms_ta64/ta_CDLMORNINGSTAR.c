@@ -34,14 +34,14 @@
 /* List of contributors:
  *
  *  Initial  Name/description
- *  -------------------------------------------------------------------
+ *  ---
  *  AC       Angelo Ciceri
  *
  *
  * Change history:
  *
  *  MMDDYY BY   Description
- *  -------------------------------------------------------------------
+ *  ---
  *  100304 AC   Creation           
  *
  */
@@ -114,7 +114,7 @@
  * Output = int
  * 
  * Optional Parameters
- * -------------------
+ * ---
  * optInPenetration:(From 0 to TA_REAL_MAX)
  *    Percentage of penetration of a candle within another candle
  * 

@@ -34,14 +34,14 @@
 /* List of contributors:
  *
  *  Initial  Name/description
- *  -------------------------------------------------------------------
+ *  ---
  *  MF       Mario Fortier
  *
  *
  * Change history:
  *
  *  MMDDYY BY   Description
- *  -------------------------------------------------------------------
+ *  ---
  *  112400 MF   Template creation.
  *  052603 MF   Adapt code to compile with .NET Managed C++
  *
@@ -122,7 +122,7 @@
  * Output = double, double, double
  * 
  * Optional Parameters
- * -------------------
+ * ---
  * optInSignalPeriod:(From 1 to 100000)
  *    Smoothing for the signal line (nb of period)
  * 

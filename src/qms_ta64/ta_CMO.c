@@ -34,14 +34,14 @@
 /* List of contributors:
  *
  *  Initial  Name/description
- *  -------------------------------------------------------------------
+ *  ---
  *  MF       Mario Fortier
  *  BT       Barry Tsung
  *
  * Change history:
  *
  *  MMDDYY BY      Description
- *  -------------------------------------------------------------------
+ *  ---
  *  112605 MF      Initial version.
  *  021806 MF,BT   Fix #1434450 reported by BT.
  */
@@ -120,7 +120,7 @@
  * Output = double
  * 
  * Optional Parameters
- * -------------------
+ * ---
  * optInTimePeriod:(From 2 to 100000)
  *    Number of period
  * 

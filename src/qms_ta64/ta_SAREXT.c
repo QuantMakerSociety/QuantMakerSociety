@@ -34,7 +34,7 @@
 /* List of contributors:
  *
  *  Initial  Name/description
- *  -------------------------------------------------------------------
+ *  ---
  *  MF       Mario Fortier
  *  PP       Peter Pudaite
  *  CF       Christo Fogelberg
@@ -42,7 +42,7 @@
  * Change history:
  *
  *  MMDDYY BY    Description
- *  -------------------------------------------------------------------
+ *  ---
  *  120802 MF    Template creation.
  *  091503 PP    Reworked TA_SAR to allow customisation of more SAR params.
  *  092103 MF    Some changes related on first round of tests
@@ -195,7 +195,7 @@
  * Output = double
  * 
  * Optional Parameters
- * -------------------
+ * ---
  * optInStartValue:(From TA_REAL_MIN to TA_REAL_MAX)
  *    Start value and direction. 0 for Auto, >0 for Long, <0 for Short
  * 

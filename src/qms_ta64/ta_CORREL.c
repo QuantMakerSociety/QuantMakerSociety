@@ -34,14 +34,14 @@
 /* List of contributors:
  *
  *  Initial  Name/description
- *  -------------------------------------------------------------------
+ *  ---
  *  MF       Mario Fortier
  *
  *
  * Change history:
  *
  *  MMDDYY BY   Description
- *  -------------------------------------------------------------------
+ *  ---
  *  120802 MF   Template creation.
  *  101003 MF   Initial Coding
  *  062804 MF   Resolve div by zero bug on limit case.
@@ -116,7 +116,7 @@
  * Output = double
  * 
  * Optional Parameters
- * -------------------
+ * ---
  * optInTimePeriod:(From 1 to 100000)
  *    Number of period
  * 

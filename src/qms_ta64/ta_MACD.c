@@ -34,14 +34,14 @@
 /* List of contributors:
  *
  *  Initial  Name/description
- *  -------------------------------------------------------------------
+ *  ---
  *  MF       Mario Fortier
  *  JPP      JP Pienaar (j.pienaar@mci.co.za)
  *
  * Change history:
  *
  *  MMDDYY BY   Description
- *  -------------------------------------------------------------------
+ *  ---
  *  112400 MF   Template creation.
  *  052603 MF   Adapt code to compile with .NET Managed C++
  *  080403 JPP  Fix #767653 for logic when swapping periods.
@@ -155,7 +155,7 @@
  * Output = double, double, double
  * 
  * Optional Parameters
- * -------------------
+ * ---
  * optInFastPeriod:(From 2 to 100000)
  *    Number of period for the fast MA
  * 

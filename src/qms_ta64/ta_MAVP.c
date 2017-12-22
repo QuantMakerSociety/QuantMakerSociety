@@ -34,13 +34,13 @@
 /* List of contributors:
  *
  *  Initial  Name/description
- *  -------------------------------------------------------------------
+ *  ---
  *  MF       Mario Fortier
  *
  * Change history:
  *
  *  MMDDYY BY     Description
- *  -------------------------------------------------------------------
+ *  ---
  *  021807 MF     Initial Version
  */
 
@@ -127,7 +127,7 @@
  * Output = double
  * 
  * Optional Parameters
- * -------------------
+ * ---
  * optInMinPeriod:(From 2 to 100000)
  *    Value less than minimum will be changed to Minimum period
  * 

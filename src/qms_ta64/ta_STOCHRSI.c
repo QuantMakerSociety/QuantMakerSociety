@@ -34,7 +34,7 @@
 /* List of contributors:
  *
  *  Initial  Name/description
- *  -------------------------------------------------------------------
+ *  ---
  *  MF       Mario Fortier
  *  PP       Peter Pudaite
  *  AA       Andrew Atkinson
@@ -42,7 +42,7 @@
  * Change history:
  *
  *  MMDDYY BY   Description
- *  -------------------------------------------------------------------
+ *  ---
  *  120802 MF   Template creation.
  *  101103 PP   Initial creation of code.
  *  112603 MF   Add independent control to the RSI period.
@@ -145,7 +145,7 @@
  * Output = double, double
  * 
  * Optional Parameters
- * -------------------
+ * ---
  * optInTimePeriod:(From 2 to 100000)
  *    Number of period
  * 

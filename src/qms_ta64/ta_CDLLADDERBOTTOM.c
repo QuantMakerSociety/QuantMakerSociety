@@ -34,14 +34,14 @@
 /* List of contributors:
  *
  *  Initial  Name/description
- *  -------------------------------------------------------------------
+ *  ---
  *  AC       Angelo Ciceri
  *  MF       Mario Fortier
  *
  * Change history:
  *
  *  MMDDYY BY   Description
- *  -------------------------------------------------------------------
+ *  ---
  *  032005 AC   Creation           
  *  041305 MF   Minor modification for a compiler warning
  */

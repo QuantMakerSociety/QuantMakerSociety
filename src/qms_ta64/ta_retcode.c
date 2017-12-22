@@ -39,7 +39,7 @@
  * This function is a convenient way for the user to translate a TA_RetCode into
  * a human readable string.
  */
-#include <ta_common.h>
+#include "ta_common.h"
 
 typedef struct 
 {

@@ -34,14 +34,14 @@
 /* List of contributors:
  *
  *  Initial  Name/description
- *  -------------------------------------------------------------------
+ *  ---
  *  MF       Mario Fortier
  *  RM       Robert Meier (talib@meierlim.com http://www.meierlim.com)
  *
  * Change history:
  *
  *  MMDDYY BY     Description
- *  -------------------------------------------------------------------
+ *  ---
  *  052603 MF     Adapt code to compile with .NET Managed C++
  *  123004 RM,MF  Adapt code to work with Visual Studio 2005
  *

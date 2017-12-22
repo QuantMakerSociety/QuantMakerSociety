@@ -34,7 +34,7 @@
 /* List of contributors:
  *
  *  Initial  Name/description
- *  -------------------------------------------------------------------
+ *  ---
  *  JP       John Price <jp_talib@gcfl.net>
  *  MF       Mario Fortier
  *  AM       Adrian Michel <http://amichel.com>
@@ -42,7 +42,7 @@
  * Change history:
  *
  *  MMDDYY BY      Description
- *  -------------------------------------------------------------------
+ *  ---
  *  070203 JP      Initial.
  *  072106 MF,AM   Fix #1526632. Add missing atan().
  */
@@ -115,7 +115,7 @@
  * Output = double
  * 
  * Optional Parameters
- * -------------------
+ * ---
  * optInTimePeriod:(From 2 to 100000)
  *    Number of period
  * 

@@ -34,7 +34,7 @@
 /* List of contributors:
  *
  *  Initial  Name/description
- *  -------------------------------------------------------------------
+ *  ---
  *  MF       Mario Fortier
  *  AC       Angelo Ciceri
  *
@@ -42,7 +42,7 @@
  * Change history:
  *
  *  MMDDYY BY   Description
- *  -------------------------------------------------------------------
+ *  ---
  *  112400 MF   First version.
  *  082004 AC   Add TA_SetCandleSettings, TA_RestoreCandleDefaultSettings
  *              and call to TA_RestoreCandleDefaultSettings in TA_Initialize

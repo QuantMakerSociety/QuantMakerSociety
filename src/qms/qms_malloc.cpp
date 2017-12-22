@@ -10,7 +10,7 @@ void* qms_malloc(size_t siz)
 {
 	void* p = malloc(siz);
 	if (!p) {
-		throw QMS_EXCEPTION(__FUNCTION__ " failed.");
+		throw qms_exception(__FILE__, __LINE__, __FUNCTION__ " failed");
 	}
 	return p;
 }

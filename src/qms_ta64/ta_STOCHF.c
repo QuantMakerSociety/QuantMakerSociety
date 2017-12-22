@@ -34,14 +34,14 @@
 /* List of contributors:
  *
  *  Initial  Name/description
- *  -------------------------------------------------------------------
+ *  ---
  *  MF       Mario Fortier
  *  EKO      echo999@ifrance.com
  *
  * Change history:
  *
  *  MMDDYY BY   Description
- *  -------------------------------------------------------------------
+ *  ---
  *  010802 MF   Template creation.
  *  051103 EKO  Found bug and fix related to outFastD.
  *  052603 MF   Adapt code to compile with .NET Managed C++
@@ -140,7 +140,7 @@
  * Output = double, double
  * 
  * Optional Parameters
- * -------------------
+ * ---
  * optInFastK_Period:(From 1 to 100000)
  *    Time period for building the Fast-K line
  * 
@@ -276,7 +276,7 @@
     * corresponding K function.
     *
     *                    (Today's Close - LowestLow)
-    *  FASTK(Kperiod) =  --------------------------- * 100
+    *  FASTK(Kperiod) =  --- * 100
     *                     (HighestHigh - LowestLow)
     *   
     *  FASTD(FastDperiod, MA type) = MA Smoothed FASTK over FastDperiod

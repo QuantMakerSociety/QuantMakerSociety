@@ -34,14 +34,14 @@
 /* List of contributors:
  *
  *  Initial  Name/description
- *  -------------------------------------------------------------------
+ *  ---
  *  DM       Drew McCormack (http://www.trade-strategist.com)
  *  MF       Mario Fortier
  *
  * Change history:
  *
  *  MMDDYY BY   Description
- *  -------------------------------------------------------------------
+ *  ---
  *  281206 DM   Initial Implementation
  *  010606 MF   Abstract local arrays. Detect divide by zero.
  */
@@ -135,7 +135,7 @@
  * Output = double
  * 
  * Optional Parameters
- * -------------------
+ * ---
  * optInTimePeriod1:(From 1 to 100000)
  *    Number of bars for 1st period.
  * 

@@ -34,7 +34,7 @@
 /* List of contributors:
  *
  *  Initial  Name/description
- *  -------------------------------------------------------------------
+ *  ---
  *  MF       Mario Fortier
  *  AM       Adrian Michel
  *  MIF      Mirek Fontan (mira@fontan.cz)
@@ -43,7 +43,7 @@
  * Change history:
  *
  *  MMDDYY BY    Description
- *  -------------------------------------------------------------------
+ *  ---
  *  010802 MF    Template creation.
  *  052603 MF    Adapt code to compile with .NET Managed C++
  *  082303 MF    Fix #792298. Remove rounding. Bug reported by AM.
@@ -123,7 +123,7 @@
  * Output = double
  * 
  * Optional Parameters
- * -------------------
+ * ---
  * optInTimePeriod:(From 1 to 100000)
  *    Number of period
  * 
@@ -283,19 +283,19 @@
     * smoothing approach:
     * 
     *                                    Previous +DM14
-    *  Today's +DM14 = Previous +DM14 -  -------------- + Today's +DM1
+    *  Today's +DM14 = Previous +DM14 -  -- + Today's +DM1
     *                                         14
     *
     * Calculation of a +DI14 is as follow:
     * 
     *               +DM14
-    *     +DI14 =  --------
+    *     +DI14 =  
     *                TR14
     *
     * Calculation of the TR14 is:
     *
     *                                   Previous TR14
-    *    Today's TR14 = Previous TR14 - -------------- + Today's TR1
+    *    Today's TR14 = Previous TR14 - -- + Today's TR1
     *                                         14
     *
     *    The first TR14 is the summation of the first 14 TR1. See the
@@ -348,7 +348,7 @@
       /* No smoothing needed. Just do the following:
        * for each price bar.
        *          +DM1
-       *   +DI1 = ----
+       *   +DI1 = 
        *           TR1
        */
       VALUE_HANDLE_DEREF(outBegIdx) = startIdx;

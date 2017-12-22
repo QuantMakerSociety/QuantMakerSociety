@@ -21,7 +21,7 @@ private:
 	}
 
 public:
-	/**
+	/** 
 	 * Constructor.
 	 * @param fname Path where the exception took place.
 	 * @param line Line where the exception took place.
@@ -37,8 +37,7 @@ public:
 	 * @param x What to copy.
 	 * @return
 	 */
-	explicit qms_exception(const qms_exception& x)
-	    : m_fname(x.m_fname), m_msg(x.m_msg), m_line(x.m_line)
+	qms_exception(const qms_exception& x): m_fname(x.m_fname), m_msg(x.m_msg), m_line(x.m_line)
 	{
 	}
 

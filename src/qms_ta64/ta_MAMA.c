@@ -34,14 +34,14 @@
 /* List of contributors:
  *
  *  Initial  Name/description
- *  -------------------------------------------------------------------
+ *  ---
  *  MF       Mario Fortier
  *
  *
  * Change history:
  *
  *  MMDDYY BY   Description
- *  -------------------------------------------------------------------
+ *  ---
  *  120802 MF   Template creation.
  *  023003 MF   Initial Coding of MAMA.
  *  052603 MF   Adapt code to compile with .NET Managed C++
@@ -133,7 +133,7 @@
     *          3 price bars for jQ
     *          1 price bar for Re/Im
     *          1 price bar for the Delta Phase
-    *        -------
+    *        ---
     *         32 Total
     */
 
@@ -148,7 +148,7 @@
  * Output = double, double
  * 
  * Optional Parameters
- * -------------------
+ * ---
  * optInFastLimit:(From 0.01 to 0.99)
  *    Upper limit use in the adaptive algorithm
  * 
